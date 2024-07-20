@@ -54,6 +54,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .button .ligne{
     width: 80%;
@@ -69,6 +70,30 @@ body{
     border: none;
     cursor: pointer;
     padding: 10px;
+}
+
+.pop{
+    display: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 14px;
+    background-color: #e80c0c;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: -42px;
+    right: 29px;
+}
+.pop::before{
+    content: "";
+    border: 10px solid;
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    border-color: #e80c0c transparent transparent;
 }
 .animation{
     animation: anime 0.5s linear;

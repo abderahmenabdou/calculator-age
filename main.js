@@ -7,6 +7,7 @@ let errorDay = document.getElementById("error-day");
 let errorMonth = document.getElementById("error-month");
 let errorYear = document.getElementById("error-year");
 let result = document.querySelector(".result");
+let pop = document.querySelector(".pop");
 
 btn.addEventListener("click", function () {
   let dateNow = new Date();
@@ -119,4 +120,5 @@ function clearData() {
 function change() {
   btn.style.backgroundColor = "red";
   btn.classList.add("animation");
+  pop.style.display = "block";
 }
