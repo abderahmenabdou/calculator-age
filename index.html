@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- START CONTENT -->
+    <div class="content">
+        <!-- START DATE INPUT -->
+        <div class="date-input">
+            <div>
+                <label>day</label>
+                <input type="text" oninput="change()" name="" id="day" maxlength="2">
+                <br>
+                <span id="error-day"></span>
+            </div>
+            <div>
+                <label>month</label>
+                <input type="text" oninput="change()" name="" id="month" maxlength="2">
+                <br>
+                <span id="error-month"></span>
+            </div>
+            <div>
+                <label>year</label>
+                <input type="text" oninput="change()" name="" id="year" maxlength="4">
+                <br>
+                <span id="error-year"></span>
+            </div>
+        </div>
+        <!-- END DATE INPUT -->
+
+        <!-- START BUTTON SUBMIT -->
+        <div class="button">
+            <div class="ligne"></div>
+            <button class="btn" type="submit"><img src="/icon-arrow.svg" alt=""></button>
+        </div>
+        <!-- END BUTTON SUBMIT -->
+
+        <!-- START RESULT -->
+        <div class="result">
+            <h2><span>--</span> years</h2>
+        <h2><span>--</span> months</h2>
+        <h2><span>--</span> days</h2>
+        </div>
+        <!-- END RESULT -->
+    </div>
+    <!-- END CONTENT -->
+
+    <script src="main.js"></script>
+</body>
+</html>

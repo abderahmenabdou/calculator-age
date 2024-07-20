@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eee;
+}
+.content{
+    width: 550px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px 15px 150px 15px;
+    padding: 30px;
+}
+
+.content .date-input{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.content .date-input .error{
+    display: inline-block;
+    margin-top: 5px;
+    text-transform: capitalize;
+    color: red;
+    font-size: 14px;
+}
+.content .date-input label{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #555;
+    display: inline-block;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.content .date-input input{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button .ligne{
+    width: 80%;
+    height: 2px;
+    background-color: #999;
+}
+
+.button .btn{
+    position: relative;
+    left: -52px;
+    border-radius: 50%;
+    background: #864bfb;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.animation{
+    animation: anime 0.5s linear;
+}
+@keyframes anime {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+.button .btn img{
+    width: 26px;
+    object-fit: cover;
+}
+
+.result h2{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.result h2 span{
+    font-size: 65px;
+    color: #864bfb;
+}
