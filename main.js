@@ -120,5 +120,11 @@ function clearData() {
 function change() {
   btn.style.backgroundColor = "red";
   btn.classList.add("animation");
-  pop.style.display = "block";
+  // pop.style.display = "block";
+
+  if (screen.width > 767) {
+    pop.style.display = "block";
+  } else {
+    pop.style.display = "none";
+  }
 }

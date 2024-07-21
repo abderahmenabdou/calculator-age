@@ -20,7 +20,7 @@ body{
 }
 
 .content .date-input{
-    width: 380px;
+    width: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,4 +118,40 @@ body{
 .result h2 span{
     font-size: 65px;
     color: #864bfb;
+}
+
+@media (max-width: 767px){
+    .content{
+        width: 90%;
+    }
+    .content .date-input{
+        width: 80%;
+    }
+    .content .date-input label{
+        font-size: 12px;
+    }
+    .content .date-input input{
+        width: 100%;
+    }
+    .button{display: block;}
+    .button .ligne{
+        width: 100%;
+        height: 2px;
+        background-color: #999;
+        margin-top: 60px;
+    }
+    .button .btn{
+        left: 45%;
+        top: -25px;
+    }
+    .result{
+        margin-top: -30px;
+    }
+    .result h2{
+        font-size: 38px;
+    }
+    .result h2 span{
+        font-size: 60px;
+    }
+    
 }
